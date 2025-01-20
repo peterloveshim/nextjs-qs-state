@@ -1,0 +1,40 @@
+{
+  // "root": true,
+  // "parser": "@typescript-eslint/parser",
+  // // "plugins": ["@typescript-eslint", "prettier"],
+  // "parserOptions": {
+  //   "project": "./tsconfig.json"
+  // },
+  // "env": {
+  //   "node": true
+  // },
+  "extends": [
+    // "plugin:@typescript-eslint/recommended",
+    // "airbnb",
+    // "airbnb-typescript",
+    // "plugin:prettier/recommended",
+    "next/core-web-vitals"
+  ],
+  // "rules": {
+  //   // 'React' must be in scope when using JSX 에러 해결 (Next.js)
+  //   "react/react-in-jsx-scope": "off",
+  //   // ts파일에서 tsx구문 허용 (Next.js)
+  //   "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+  //   // Error: Delete `␍`  prettier/prettier
+  //   "prettier/prettier": [
+  //     "error",
+  //     {
+  //       "endOfLine": "auto"
+  //     }
+  //   ],
+  //   // Error: Unexpected dangling '_' in '_userList'.  no-underscore-dangle
+  //   "no-underscore-dangle": "off",
+  //   // Error: Variable name, @typescript-eslint/naming-convention
+  //   "@typescript-eslint/naming-convention": "off"
+  // }
+  "rules": {
+    "react/display-name": "off",
+    "react/no-children-prop": "off",
+    "jsx-a11y/alt-text": "off" // @react-pdf/renderer 의 Image 컴포넌트는 alt attribute 가 없음, eslint에서는 warning
+  }
+}
