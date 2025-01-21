@@ -53,9 +53,19 @@ const ProductListFilters = () => {
      *
      * { scroll: false } => maintain the scroll position
      *
-     * searchParams의 값이 변경되는 경우 server component의 re-render을 발생시킴
+     * page server component의 re-render을 발생시킴
      */
-    router.replace(`?${params.toString()}`, { scroll: false });
+    router.replace(`?${params.toString()}`, { scroll: false }); //
+
+    /*
+    // re-render 발생 X
+    const replaceUrl = `/pure-1?${params.toString()}`;
+    window.history.replaceState(
+      { ...window.history.state, as: replaceUrl, url: replaceUrl },
+      "",
+      replaceUrl
+    );
+    */
   }, [
     debouncedSearchTerm,
     debouncedCategory,
