@@ -23,13 +23,16 @@ export default async function Page({
   // Construct the API endpoint with query parameters
   const params = new URLSearchParams(filters).toString();
 
+  console.log("server component re-render....");
+  console.log("params : ", params);
+
   // Fetch products from the API
   const res = await fetch(`http://localhost:3000/api/products?${params}`);
   const resJson: TProductsResponse = await res.json();
   const { items: products } = resJson.data;
 
   return (
-    <div>
+    <div className="p-1">
       <ProductListFilters />
       <ul>
         {products.map((product: TProductItem) => (

@@ -13,7 +13,7 @@ export default function Home() {
           </li>
           <li className="mb-2">
             <Link
-              href={"/nuqs-1?param1=test1&param2=test2"}
+              href={"/nuqs-1?latitude=10.11&longitude=20.22"}
               className="hover:text-blue-500"
             >
               Example2 (nuqs)
