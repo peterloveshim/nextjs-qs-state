@@ -23,3 +23,5 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## 참조
 
 [Mastering State in Next.js App Router with URL Query Parameters: A Practical Guide](https://medium.com/@roman_j/mastering-state-in-next-js-app-router-with-url-query-parameters-a-practical-guide-03939921d09c)
+
+[nuqs : Type-safe search params state manager for React](https://nuqs.47ng.com/)

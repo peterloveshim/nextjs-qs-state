@@ -1,6 +1,10 @@
 import ProductListFilters from "@/components/ProductListFilters";
 import { TProductItem, TProductsResponse } from "@/types/product";
 
+/**
+ * 외부 모듈 X
+ */
+
 export default async function Page({
   searchParams,
 }: {

@@ -7,8 +7,16 @@ export default function Home() {
         <h1>Handling State in Next.js App Router with URL Query Parameters</h1>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            <Link href={"/example1"} className="hover:text-blue-500">
-              Example1
+            <Link href={"/pure-1"} className="hover:text-blue-500">
+              Example1 (Pure Nextjs)
+            </Link>
+          </li>
+          <li className="mb-2">
+            <Link
+              href={"/nuqs-1?param1=test1&param2=test2"}
+              className="hover:text-blue-500"
+            >
+              Example2 (nuqs)
             </Link>
           </li>
         </ol>
